@@ -1,0 +1,129 @@
+<nav class="navbar navbar-expand-lg bg-darkblue">
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <a class="navbar-brand" href="#">
+        <img
+          src="images/logo.png"
+          alt="Swift Deals Logo"
+          class="logo-responsive-height"
+        />
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About Us</a>
+        </li>
+      </ul>
+      <div class="ms-auto">
+        <div class="btn-group" role="group">
+          <a href="Login.html" class="btn btn-outline-light rounded-start"
+            >Log in</a
+          >
+          <a href="sign up.html" class="btn btn-outline-light rounded-end"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="text-center mb-4">Sign Up</h3>
+          <form>
+            <div class="mb-3">
+              <label for="username1" class="form-label">First Name:</label>
+              <input
+                type="text"
+                name="us1"
+                class="form-control"
+                id="username1"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="username2" class="form-label">Last Name:</label>
+              <input
+                type="text"
+                name="us2"
+                class="form-control"
+                id="username2"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address:</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password:</label>
+              <input
+                type="password"
+                name="pass"
+                class="form-control"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label"
+                >Confirm Password:</label
+              >
+              <input
+                type="password"
+                name="conpass"
+                class="form-control"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            <div class="res">
+              <input
+                class="mar"
+                type="checkbox"
+                id="ag"
+                name="agreement"
+                value="agree"
+                required
+              />
+              <label class="inline" for="ag"
+                >I have read and agree to the privacy policy, terms of service,
+                and community guidelines.</label
+              >
+            </div>
+            <div>
+              <button type="submit" class="btn btn-darkblue w-100">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

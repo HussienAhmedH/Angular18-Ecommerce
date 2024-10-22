@@ -1,0 +1,123 @@
+<div class="navbar navbar-expand-lg bg-darkblue sticky-top">
+  <!-- Navbar Toggler (hamburger button) -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img
+        src="assets/images/logo.png"
+        alt="Swift Deals Logo"
+        class="logo-responsive-height img-fluid"
+      />
+    </a>
+
+    <!-- Navbar Links -->
+    <div
+      class="collapse navbar-collapse text-lg-start text-center"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav me-auto">
+        <!-- Home -->
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-darkblue border-0"
+            aria-current="page"
+            href="#"
+            >Home</a
+          >
+        </li>
+
+        <!-- About Us -->
+        <li class="nav-item">
+          <a class="nav-link btn btn-darkblue border-0" href="#About"
+            >About Us</a
+          >
+        </li>
+
+        <!-- Products -->
+        <li class="nav-item">
+          <a class="nav-link btn btn-darkblue border-0" href="Products.html"
+            >Products</a
+          >
+        </li>
+
+        <!-- Your Cart -->
+        <li class="nav-item">
+          <button
+            type="button"
+            class="nav-link btn btn-darkblue border-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Your Cart
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Your Cart
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link btn btn-darkblue border-0" href="Contacts.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+
+      <!-- Log in / Sign Up buttons -->
+      <div class="ms-auto text-lg-end text-center">
+        <div class="btn-group" role="group">
+          <a routerLink="/login" class="btn btn-outline-light rounded-start"
+            >Log in</a
+          >
+          <a routerLink="/sign-up" class="btn btn-outline-light rounded-end"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
