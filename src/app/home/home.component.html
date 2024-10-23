@@ -171,134 +171,102 @@
 </div>
 
 <!-- products -->
-<div class="cards flex-column-md card-row card-row1 mt-5">
-  <div class="container">
-    <h3 class="section-title text-center mb-4">our products</h3>
-    <div class="d-flex">
-      <div class="card">
-        <img src="assets/images/Huawei-nova-11i.webp" alt="Card Image" class="img-fluid img-thumbnail modify-product-img-size"/>
-
-        <div class="card-content">
+<div class="container mt-5 ">
+  <h3 class="section-title text-center mb-4">Our Products</h3>
+  
+  <div class="row g-4">
+    <!-- Product 1 -->
+    <div class="col-lg-4 col-md-4">
+      <div class="card h-100">
+        <img src="assets/images/Huawei-nova-11i.webp" alt="Card Image" class="img-fluid img-thumbnail product-img"  />
+        <div class="card-content p-3">
           <h2 class="card-title">Huawei nova 11i</h2>
-
-          <p class="card-description text-end">
-            هاتف Huawei Nova 11i 4G ، غطاء جراب هاتف مضاد للصدمات على شكل قرص
-            العسل - شفاف
-          </p>
-          <p class="product-price">
-            price is 90 <span class="product-price-currency">$</span>
-          </p>
-          <button class="btn btn-warning">Add to Favourite</button>
-          <button class="btn btn-darkblue add" onclick="addToCart(1)">
-            Add to Cart
-          </button>
-          <button class="btn btn-info view" onclick="viewModal(1)">View</button>
-        </div>
-      </div>
-
-      <div class="card flex-column-md card-row card-row2">
-        <img src="assets/images/Oppo-Reno-12-Pro-1.webp" alt="Card Image" />
-
-        <div class="card-content">
-          <h2 class="card-title">Oppo-Reno-12-Pro-1</h2>
-
-          <p class="card-description">
-            واقي الشاشة ARROWS لهاتف Oppo Reno 12 Pro الماركة: ARROWS | م
-          </p>
-          <p class="product-price">
-            price is 90 <span class="product-price-currency">$</span>
-          </p>
-          <button class="btn btn-warning">Add to Favourite</button>
-          <button class="btn btn-darkblue add" onclick="addToCart(1)">
-            Add to Cart
-          </button>
-          <button class="btn btn-info view" onclick="viewModal(1)">View</button>
-        </div>
-      </div>
-
-      <div class="card flex-column-md card-row card-row3">
-        <img src="assets/images/Realme-C67-4G-1.webp" alt="Card Image" />
-
-        <div class="card-content">
-          <h2 class="card-title">Realme-C67-4G-1</h2>
-
-          <p class="card-description">
-            وبايل ريلمي 11 شبكة الجيل الخامس 5G/ريلمي 11X شبكة الجيل الخامس
-            5G/ريلمي نارزو 60X شبكة
-          </p>
-          <p class="product-price">
-            price is 90 <span class="product-price-currency">$</span>
-          </p>
-          <button class="btn btn-warning">Add to Favourite</button>
-          <button class="btn btn-darkblue add" onclick="addToCart(1)">
-            Add to Cart
-          </button>
-          <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+          <p class="card-description text-end">هاتف Huawei Nova 11i 4G ، غطاء جراب هاتف مضاد للصدمات على شكل قرص العسل - شفاف</p>
+          <p class="product-price">Price is 90 <span class="product-price-currency">$</span></p>
+          <button class="btn btn-darkblue add w-50" onclick="addToCart(1)">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn btn-warning w-50">Add to Favourite</button>
+          <button class="btn btn-info w-100 mt-2" onclick="viewModal(1)">View</button>
         </div>
       </div>
     </div>
 
-    <div class="container d-flex">
-      <div class="card">
-        <img src="assets/images/lap.jpg" alt="Card Image" />
-        <div class="card-content">
-          <h2 class="card-title">Lenovo-Laptop</h2>
-          <p class="card-description">
-            Lenovo N4020 Laptop - 8GB - 256GB SSD - UHD - 15.6" HD - Deep Blue -
-            82V700Jwed - Ideapad 1
-          </p>
-          <p class="product-price">
-            price is 11,699 <span class="product-price-currency">$</span>
-          </p>
-          <button class="btn btn-warning">Add to Favourite</button>
-          <button class="btn btn-darkblue add" onclick="addToCart(1)">
-            Add to Cart
-          </button>
-          <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+    <!-- Product 2 -->
+    <div class="col-lg-4 col-md-4">
+      <div class="card h-100">
+        <img src="assets/images/Oppo-Reno-12-Pro-1.webp" alt="Card Image" class="img-fluid img-thumbnail product-img"  />
+        <div class="card-content p-3">
+          <h2 class="card-title">Oppo Reno 12 Pro 1</h2>
+          <p class="card-description text-end">واقي الشاشة ARROWS لهاتف Oppo Reno 12 Pro</p>
+          <p class="product-price">Price is 90 <span class="product-price-currency">$</span></p>
+          <button class="btn btn-darkblue add w-50" onclick="addToCart(1)">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn btn-warning w-50">Add to Favourite</button>
+          <button class="btn btn-info w-100 mt-2" onclick="viewModal(1)">View</button>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="card">
-        <img src="assets/images/lapp.jpg" alt="Card Image" />
 
-        <div class="card-content">
-          <h2 class="card-title">Asus-x1404va</h2>
-
-          <p class="card-description">
-            ASUS X1404VA-EB005W VivoBook 14 - Intel Core i5 1335U - 14 FHD - 8GB
-            RAM - 512GB SSD - Intel UHD Graphics - Windows 11 - Pinkberry
-          </p>
-          <p class="product-price">
-            price is 11,699 <span class="product-price-currency">$</span>
-          </p>
-          <button class="btn btn-warning">Add to Favourite</button>
-          <button class="btn btn-darkblue add" onclick="addToCart(1)">
-            Add to Cart
-          </button>
-          <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+    <!-- Product 3 -->
+    <div class="col-lg-4 col-md-4">
+      <div class="card h-100">
+        <img src="assets/images/Realme-C67-4G-1.webp" alt="Card Image" class="img-fluid img-thumbnail product-img"  />
+        <div class="card-content p-3">
+          <h2 class="card-title">Realme C67 4G 1</h2>
+          <p class="card-description text-end">وبايل ريلمي 11 شبكة الجيل الخامس 5G/ريلمي 11X شبكة الجيل الخامس 5G/ريلمي نارزو 60X شبكة</p>
+          <p class="product-price">Price is 90 <span class="product-price-currency">$</span></p>
+          <button class="btn btn-darkblue add w-50" onclick="addToCart(1)">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn btn-warning w-50">Add to Favourite</button>
+          <button class="btn btn-info w-100 mt-2" onclick="viewModal(1)">View</button>
         </div>
       </div>
     </div>
-    <div class="card">
-      <img src="assets/images/smart.jpg" alt="Card Image" />
-
-      <div class="card-content">
-        <h2 class="card-title">Full-Hd-Smart-led-Tv</h2>
-
-        <p class="card-description">
-          Samsung UA43T5300 - 43 Inch Full HD Smart TV with Built-in Receiver
-        </p>
-        <p class="product-price">
-          price is 11,699 <span class="product-price-currency">$</span>
-        </p>
-        <button class="btn btn-warning">Add to Favourite</button>
-        <button class="btn btn-darkblue add" onclick="addToCart(1)">
-          Add to Cart
-        </button>
-        <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+    
+    <!-- Product 4 -->
+    <div class="col-lg-4 col-md-4 ">
+      <div class="card h-100">
+        <img src="assets/images/lap.jpg" alt="Card Image" class="img-fluid img-thumbnail product-img" />
+        <div class="card-content p-3">
+          <h2 class="card-title">Lenovo Laptop</h2>
+          <p class="card-description">Lenovo N4020 Laptop - 8GB - 256GB SSD - UHD - 15.6" HD - Deep Blue - 82V700Jwed - Ideapad 1</p>
+          <p class="product-price">Price is 11,699 <span class="product-price-currency">$</span></p>
+          <button class="btn btn-darkblue add w-50" onclick="addToCart(1)">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn btn-warning w-50">Add to Favourite</button>
+          <button class="btn btn-info w-100 mt-2" onclick="viewModal(1)">View</button>
+        </div>
       </div>
     </div>
+    
+    <!-- Product 5 -->
+    <div class="col-lg-4 col-md-4 ">
+      <div class="card h-100">
+        <img src="assets/images/lapp.jpg" alt="Card Image" class="img-fluid img-thumbnail product-img"  />
+        <div class="card-content p-3">
+          <h2 class="card-title">Asus x1404va</h2>
+          <p class="card-description">ASUS X1404VA-EB005W VivoBook 14 - Intel Core i5 1335U - 14 FHD - 8GB RAM - 512GB SSD - Intel UHD Graphics - Windows 11 - Pinkberry</p>
+          <p class="product-price">Price is 11,699 <span class="product-price-currency">$</span></p>
+          <button class="btn btn-darkblue add w-50" onclick="addToCart(1)">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn btn-warning w-50">Add to Favourite</button>
+          <button class="btn btn-info w-100 mt-2" onclick="viewModal(1)">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-lg-4 col-md-4 ">
+      <div class="card h-100">
+        <img src="assets/images/smart.jpg" alt="Card Image" class="img-fluid img-thumbnail product-img"  />
+        <div class="card-content p-3">
+          <h2 class="card-title">Full Hd Smart led Tv</h2>
+          <p class="card-description">Samsung UA43T5300 - 43 Inch Full HD Smart TV with Built-in Receiver</p>
+          <p class="product-price">Price is 11,699 <span class="product-price-currency">$</span></p>
+            <button class="btn btn-darkblue add w-50" onclick="addToCart(1)">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="btn btn-warning w-50">Add to Favourite</button>
+            <button class="btn btn-info w-100 mt-2" onclick="viewModal(1)">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- start   values-section -->
 
@@ -346,5 +314,3 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
