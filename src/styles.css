@@ -8,6 +8,12 @@ body {
    font-family: 'Arial', sans-serif;
 }
 
+.text-color{
+   color: var(--darkblue);
+   font-size: large;
+   
+}
+
 .bg-darkblue{
    background-color: var(--darkblue);
 }
@@ -40,9 +46,10 @@ nav{
 }
 
 .text-darkblue {
-   color: #384e5c;
-   background-color: #ffffff;
+   color: var(--darkblue);
 }
+
+
 
 .logo-responsive-height{
    height: 6rem;
@@ -59,67 +66,6 @@ nav{
  width: 100vw;
  height: 100vh;
  background-color: var(--bs-backdrop-bg);
-}
-
-/*navbar toggler*/
-
-.navbar-toggler {
- background-color: white; /* White background for the button */
- border: none; /* Remove border if preferred */
-}
-
-/* Customizing the Toggler Icon (Hamburger) */
-.navbar-toggler-icon {
- background-image: none; /* Remove default Bootstrap icon */
- position: relative;
- display: inline-block;
- width: 24px;
- height: 24px;
-}
-
-/* Hamburger bars */
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
- content: '';
- position: absolute;
- left: 0;
- right: 0;
- height: 3px;
- background-color: darkblue; /* Dark blue color for the bars */
-}
-
-.navbar-toggler-icon::before {
- top: 0;
-}
-
-.navbar-toggler-icon::after {
- bottom: 0;
-}
-
-/* Middle bar */
-.navbar-toggler-icon::after {
- content: '';
- position: absolute;
- top: 50%;
- left: 0;
- right: 0;
- height: 3px;
- background-color: darkblue;
- transform: translateY(-50%);
-}
-
-/*sale banner*/
-
-.sale-banner img {
-   border-radius: 10px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   
-}
-
-.sale-label {
-   font-weight: bold;
-   font-size: 24px;
-   border-radius: 10px 0 0 10px;
 }
 
 
@@ -361,7 +307,7 @@ position: relative;
 }
 
 .values-container .value .value-title {
- color: #931593;
+ color: var(--darkblue);
  font-size: 1.2rem;
  margin: 1.4rem 0;
 }
