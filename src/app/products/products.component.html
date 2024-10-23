@@ -1,1 +1,223 @@
-<p>products works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- <link rel="stylesheet" href="products.component.css"> -->
+     <script src="product.js" defer></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-darkblue sticky-top">
+        <div class="container">
+          <!-- Navbar Toggler (hamburger button) -->
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+      
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="../../../public/assets/images/logo.png" alt="Swift Deals Logo" class="logo-responsive-height img-fluid" />
+          </a>
+      
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse text-lg-start text-center" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link btn btn-darkblue border-0" aria-current="page" href="#">Home</a>
+              </li>
+      
+              <!-- About Us -->
+              <li class="nav-item">
+                <a class="nav-link btn btn-darkblue border-0" href="#About">About Us</a>
+              </li>
+      
+              <!-- Products -->
+              <li class="nav-item">
+                <a class="nav-link btn btn-darkblue border-0" href="Products.html">Products</a>
+              </li>
+      
+              <!-- Your Cart -->
+              <li class="nav-item">
+                <button type="button" class=" nav-link btn btn-darkblue border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Your Cart
+                </button>
+      
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Your Cart</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+      
+              <!-- Contact -->
+              <li class="nav-item">
+                <a class="nav-link btn btn-darkblue border-0" href="Contacts.html">Contact</a>
+              </li>
+            </ul>
+      
+            <!-- Log in / Sign Up buttons -->
+            <div class="ms-auto text-lg-end text-center">
+              <div class="btn-group" role="group">
+                <a href="Login.html" class="btn btn-outline-light rounded-start">Log in</a>
+                <a href="sign up.html" class="btn btn-outline-light rounded-end">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- products -->
+<section class="cards flex-column-md card-row card-row1">
+    <div class="container">
+    <h3 class="section-title text-center"> our products  </h3>
+    <div class="d-flex">
+  <div class="card">
+    <img src="../../../public/assets/images/Huawei-nova-11i.webp" alt="Card Image">
+
+    <div class="card-content">
+      <h2 class="card-title">Huawei-nova-11i</h2>
+      <p class="text-warning">&star; &star; &star; &star;&star;</p>
+      <p class="card-description">Huawei Nova 11i 4G Phone Case, Honeycomb Shockproof Phone Case Cover - Transparent</p>
+      <p class="product-price">price is  90  <span class="product-price-currency">$</span></p>
+      <button class="btn btn-warning">Add to Favourite</button>
+      <button class="btn btn-darkblue add" onclick="addToCart(1)">Add to Cart</button>
+      <button class="btn btn-info view" onclick="viewModal()">View</button>
+    </div>
+  </div>
+
+
+  <div class="card flex-column-md card-row card-row2">
+    <img src="../../../public/assets/images/Oppo-Reno-12-Pro-1.webp" alt="Card Image">
+
+    <div class="card-content">
+      <h2 class="card-title">Oppo-Reno-12-Pro-1</h2>
+      <p class="text-warning">&star; &star; &star; &star;&star;</p>
+      <p class="card-description">ARROWS Screen Protector for Oppo Reno 12 Pro
+        Brand: ARROWS</p>
+        <p class="product-price">price is  90  <span class="product-price-currency">$</span></p>
+      <button class="btn btn-warning">Add to Favourite</button>
+      <button class="btn btn-darkblue add" onclick="addToCart(1)">Add to Cart</button>
+      <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+    </div>
+  </div>
+
+  <div class="card flex-column-md card-row card-row3">
+    <img src="../../../public/assets/images/Realme-C67-4G-1.webp" alt="Card Image">
+
+    <div class="card-content">
+      <h2 class="card-title">Realme-C67-4G-1</h2>
+      <p class="text-warning">&star; &star; &star; &star;&star;</p>
+      
+      <p class="card-description">Realme 11 5G / Realme 11 X 5G / Realme Narzo 60X 5G</p>
+      <p class="product-price">price is  90  <span class="product-price-currency">$</span></p>
+      <button class="btn btn-warning">Add to Favourite</button>
+      <button class="btn btn-darkblue add" onclick="addToCart(1)">Add to Cart</button>
+      <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+    </div>
+  </div>
+</section>
+
+  <section class="container d-flex">
+  <div class="card ">
+    <img src="../../../public/assets/images/lap.jpg" alt="Card Image">
+
+    <div class="card-content">
+      <h2 class="card-title">Lenovo-Laptop</h2>
+      <p class="text-warning">&star; &star; &star; &star;&star;</p>
+      
+      <p class="card-description">Lenovo N4020 Laptop - 8GB - 256GB SSD - UHD - 15.6" HD - Deep Blue - 82V700Jwed - Ideapad 1</p>
+      <p class="product-price">price is  11,699  <span class="product-price-currency">$</span></p>
+      <button class="btn btn-warning">Add to Favourite</button>
+      <button class="btn btn-darkblue add" onclick="addToCart(1)">Add to Cart</button>
+      <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+    </div>
+  </div>
+
+  <div class="card ">
+    <img src="../../../public/assets/images/lapp.jpg" alt="Card Image">
+
+    <div class="card-content">
+      <h2 class="card-title">Asus-x1404va</h2>
+      <p class="text-warning">&star; &star; &star; &star;&star;</p>
+      
+      <p class="card-description">ASUS X1404VA-EB005W VivoBook 14 - Intel Core i5 1335U - 14 FHD - 8GB RAM - 512GB SSD - Intel UHD Graphics - Windows 11 - Pinkberry</p>
+      <p class="product-price">price is  11,699  <span class="product-price-currency">$</span></p>
+      <button class="btn btn-warning">Add to Favourite</button>
+      <button class="btn btn-darkblue add" onclick="addToCart(1)">Add to Cart</button>
+      <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+    </div>
+  </div>
+  </section>
+  <section class="container">
+    <div class="card ">
+      <img src="../../../public/assets/images/smart.jpg" alt="Card Image">
+  
+      <div class="card-content">
+        <h2 class="card-title">Full-Hd-Smart-led-Tv</h2>
+      <p class="text-warning">&star; &star; &star; &star;&star;</p>
+        
+        <p class="card-description">Samsung UA43T5300 - 43 Inch Full HD Smart TV with Built-in Receiver</p>
+        <p class="product-price">price is  11,699  <span class="product-price-currency">$</span></p>
+        <button class="btn btn-warning">Add to Favourite</button>
+        <button class="btn btn-darkblue add" onclick="addToCart(1)">Add to Cart</button>
+        <button class="btn btn-info view" onclick="viewModal(1)">View</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavh()">&times;</a>
+    <div class="card">
+        <img src="../../../public/assets/images/Huawei-nova-11i.webp" alt="Card Image">
+    
+        <div class="card-content" id="mainh">
+          <h2 class="card-title">Huawei-nova-11i</h2>
+          <p class="text-warning">&star; &star; &star; &star;&star;</p>
+          <p class="card-description">Huawei Nova 11i 4G Phone Case, Honeycomb Shockproof Phone Case Cover - Transparent</p>
+          <p class="product-price">price is  90  <span class="product-price-currency">$</span></p>
+        </div>
+    </div>
+  </div> -->
+  
+
+  <footer class="blockquote-footer pb-4 bg-darkblue text-white text-center" id="About">
+    <div class="container">
+      <p>&copy; 2024 Swift Deals. All rights reserved.</p>
+      <div class="d-flex justify-content-center">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
